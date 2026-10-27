@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Max Longman | UGC Creator</title>
+  <meta name="description" content="Max Longman makes UGC video ads that people actually watch. Based in Provo, UT.">
+  <meta property="og:title" content="Max Longman | UGC Creator">
+  <meta property="og:description" content="UGC video ads that people actually watch.">
+  <meta name="theme-color" content="#111113">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.config.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top"><span data-bind="shortName">MAX LONGMAN</span><span class="logo-dot">.</span></a>
+    <a class="btn btn-ghost btn-sm" href="#contact">Work with me</a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">UGC creator · <span data-bind="location">Provo, UT</span></p>
+        <h1>I make ads people <em>actually</em> watch.</h1>
+        <p class="lede">Short, vertical videos that feel like a friend's post, not a commercial, and still sell your product.</p>
+        <div class="cta-row">
+          <a class="btn btn-accent" href="#about">See why it works <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-ghost" href="#contact">Work with me</a>
+        </div>
+      </div>
+
+      <div class="phone reveal" aria-label="Featured video">
+        <div class="phone-notch"></div>
+        <div class="phone-screen" id="heroScreen"></div>
+        <div class="phone-ui" aria-hidden="true">
+          <span class="phone-heart">♥</span>
+          <p class="phone-caption" id="heroCaption"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <h2 class="reveal">People skip ads.<br>They don't skip <em>people.</em></h2>
+        <div class="about-body reveal">
+          <p>Everyone has learned to scroll past anything that looks like a commercial. What they stop for is a real person: someone who looks like a friend, has the same problem they do, and found the thing that fixes it.</p>
+          <p>That's what I make. Every video is built around a hook in the first second, a problem your customer recognizes, and your product as the obvious fix.</p>
+          <ul class="chips">
+            <li>Raw footage or fully edited</li>
+            <li>Solo or with a cast</li>
+            <li>Hooks, scripts and variations</li>
+            <li>Shipped product welcome</li>
+          </ul>
+        </div>
+      </div>
+      <div class="stats" id="stats" hidden></div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <h2 class="kinetic" aria-label="Built to stop the scroll.">
+        <span class="k-solid">BUILT TO STOP THE</span>
+        <span class="k-swap" aria-hidden="true"><span class="k-word">SCROLL.</span></span>
+      </h2>
+      <div class="marquee" id="marquee" aria-label="Recent work">
+        <div class="track" id="track"></div>
+      </div>
+      <button class="marquee-toggle" id="marqueeToggle" type="button">Pause</button>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <h2 class="reveal">Got a product people should know about? <em>Let's</em> make it impossible to scroll past.</h2>
+      <div class="contact-grid">
+        <form class="card form reveal" id="inquiry" novalidate>
+          <p class="muted">Tell me a bit and I'll get back to you.</p>
+          <label for="f-email">Your email</label>
+          <input id="f-email" name="email" type="email" placeholder="you@brand.com" autocomplete="email" required>
+          <label for="f-brand">What are you launching?</label>
+          <textarea id="f-brand" name="brand" rows="5" placeholder="The product, your timeline, how many videos and a rough budget…" required></textarea>
+          <p class="form-error" id="formError" role="alert" hidden></p>
+          <button class="btn btn-accent" type="submit">Send inquiry <span aria-hidden="true">→</span></button>
+          <p class="form-note muted">This opens your email app with everything filled in.</p>
+        </form>
+
+        <div class="direct reveal">
+          <p class="muted">Rather just email?</p>
+          <a class="direct-email" id="directEmail" href="mailto:ugcmaxlongman@gmail.com">ugcmaxlongman@gmail.com</a>
+          <p class="rate" id="rate" hidden></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span data-bind="name">Max Longman</span>
+    <nav class="footer-links" id="footerLinks"></nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
