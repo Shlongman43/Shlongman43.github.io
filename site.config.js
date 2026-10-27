@@ -20,11 +20,11 @@ window.SITE = {
   startingRate: "",
 
   // The phone in the hero. Use your strongest video.
-  heroVideo: { src: "", poster: "", caption: "" },
+  heroVideo: { src: "assets/videos/ethereum-car-climb.mp4", poster: "", caption: "" },
 
   // The scrolling strip of work. `label` is the brand or product name under each card.
   videos: [
-    { src: "", poster: "", label: "Your brand here" },
+    { src: "assets/videos/ethereum-car-climb.mp4", poster: "", label: "Ethereum" },
     { src: "", poster: "", label: "Product demo" },
     { src: "", poster: "", label: "Street interview" },
     { src: "", poster: "", label: "Unboxing" },
